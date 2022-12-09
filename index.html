@@ -48,14 +48,115 @@
             <p class="lead">Portfolio</p>
             <hr class="my-4">
             <p class="start-text">Currently learning front-end development</p>
-            <p class="lead">
+            <!-- Changed class from lead to button to make it a different class to help with the alignment in the jumbotron -->
+            <p class="button">
                 <!-- btn-outline-light btn-lg to have button outline with background colour light so that there is no background colour
                      https://mdbootstrap.com/docs/standard/extended/jumbotron/ -->
-                <a class="btn btn-outline-light btn-lg" href="#" role="button">Learn more</a>
+                <a class="btn btn-outline-light btn-lg " href="#" role="button">Learn more</a>
             </p>
         </div>
     </div>
 
+    <!-- Cards -->
+    <!-- Used container fluid to take up max-width 100% -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Card 1 -->
+            <!-- Used col-lg-4 so that each card (3 cards) take up a 1/3 of the page -->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+                <!-- Center aligned text using "text-center" -->
+                <!-- Able to apply border-dark to make black border around cards  -->
+                <div class="card text-center border-dark mb-3">
+                    <img src="./images/horiseon.png" class="card-img-top" alt="Horiseon webpage">
+                    <div class="card-body">
+                        <h5 class="card-title">Horiseon</h5>
+                        <p class="card-text">First website completed without instructions using HTML and CSS. Website to showcase how users can attain information on how to optimise their digital marketing</p>
+                            <!-- Hyperlinked github link to buttons -->
+                        <a href="https://chinapicke.github.io/first_challenge/" class="btn btn-outline-dark">Go to page</a>
+                    </div>
+                    <!-- Added kitchen sink card aspect to include aspects of webpage that incluce html, css, js etc -->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
+                            HTML
+                        </li>
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
+                            CSS
+                        </li>
+                        <li class="list-group-item">
+                            <img src="./images/nojs logo.png"width="35" height="40" class="d-inline-block align-top" alt="Javascript logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End card 1 -->
+
+            <!-- Card 2 -->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+                <div class="card text-center border-dark mb-3">
+                    <img src="./images/portfolio.png" class="card-img-top" alt="First Portfolio website">
+                    <div class="card-body">
+                        <h5 class="card-title">First Portfolio</h5>
+                        <p class="card-text">Second website creared with no starter code using HTML and CSS with the use of grid and media queries.</p>
+
+                        <a href="https://chinapicke.github.io/china_portfolio/#contacts" class="btn btn-outline-dark">Go to page</a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text">
+                            <!-- Added logo of HTML and CSS so it can be easily identified by user -->
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
+                            HTML
+                        </li>
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
+                            CSS
+                        </li>
+                        <li class="list-group-item">
+                            <img src="./images/nojs logo.png"width="35" height="40" class="d-inline-block align-top" alt="Javascript logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End card 2 -->
+
+            <!-- Card 3 -->
+            <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
+                <div class="card text-center border-dark mb-3">
+                    <img src="./images/prework.png" class="card-img-top" alt="Prework study guide website">
+                    <div class="card-body">
+                        <h5 class="card-title">Prework Study Guide</h5>
+                        <p class="card-text">Website created with guided instructions on how to create. Website with small amount of information about HTML, CSS and Javascript for a new beginner.</p>
+                        <a href="https://chinapicke.github.io/prework-study/" class="btn btn-outline-dark">Go to page </a>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
+                            HTML
+                        </li>
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
+                            CSS
+                        </li>
+                        <li class="list-group-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
+                                width="40" height="40" class="d-inline-block align-top" alt="Javascript logo">
+                            Javascript
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End card 3 -->
+
+        </div>
+    </div>
+    <!-- End cards -->
 
     <!-- Footer -->
     <footer>

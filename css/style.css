@@ -65,16 +65,13 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
 }
 
 .start-text{
-    position: absolute;
     margin-right: auto;
-    margin-left: 65vh;
+    margin-left: 10vh;
     font-weight: 700;
     font-size: 25px;
     color: white;
 }
 
-.btn{
-    position: relative;
-    margin: 70px;
-    margin-right: 40vh;
-}
+
+
+/* Button */
