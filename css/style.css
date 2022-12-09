@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* Changed to position absolute so navbar would have the same background as jumbotron */
 .navbar{
     position: absolute;
@@ -72,6 +73,26 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
     color: white;
 }
 
+/* Content using cards */
+/* Moved bottom margin down so that the card is in line with the other 2 cards */
+.card-body2{
+    margin-bottom: 21px;
+}
+/* Margin bottom to move down button in the card */
+.button-horiseon{
+    margin-bottom: 20px;
+}
 
+.button-prework{
+    margin-bottom: 20px;
+}
 
-/* Button */
+.card-title{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+/* Used to create a bigger gap between text and the button in card2 */
+.card-body2 p{
+    margin-bottom: 40px;
+}
