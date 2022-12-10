@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Added link to add font awesome for brand icons in the footer/contact me section -->
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+
+    <script src="https://kit.fontawesome.com/a030d70bdd.js" crossorigin="anonymous"></script>
+
     <title>China Portfolio</title>
 </head>
 
@@ -20,28 +28,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
+                    <a class="nav-link" href="#home">HOME</a>
                 <li class="nav-item">
                     <a class="nav-link" href="#work">WORK</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills-aboutme">SKILLS</a>
+                    <a class="nav-link" href="#skills-aboutme">SKILLS/ABOUT ME</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#skills-aboutme" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ABOUT ME
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">CONTACT ME</a>
-                    </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactme">CONTACT ME</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- Jumbotron -->
     <!-- Added text-center class to div to help format it centerally -->
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center" id="home">
         <div class="header-img">
             <img src="./images/me.jpg">
             <h1 class="display-4">China Pickering</h1>
@@ -49,11 +51,6 @@
             <hr class="my-4">
             <p class="start-text">Currently learning front-end development</p>
             <!-- Changed class from lead to button to make it a different class to help with the alignment in the jumbotron -->
-            <p class="button">
-                <!-- btn-outline-light btn-lg to have button outline with background colour light so that there is no background colour
-                     https://mdbootstrap.com/docs/standard/extended/jumbotron/ -->
-                <a class="btn btn-outline-light btn-lg " href="#" role="button">Learn more</a>
-            </p>
         </div>
     </div>
 
@@ -74,7 +71,7 @@
                         <!-- Created seperate div class to help format the card seperately, as card 2 has less text as -->
                         <div class="card-body1">
                             <h5 class="card-title">Horiseon</h5>
-                            <p class="card-text">Website to showcase how users can attain information on how to optimise
+                            <p class="card-text1">Website to showcase how users can attain information on how to optimise
                                 their digital marketing- HTML and CSS used.</p>
                             <!-- Hyperlinked github link to buttons -->
                             <!-- Created button class to help format buttons so that they are in line with one another from different cards -->
@@ -84,21 +81,9 @@
                             </div>
                         </div>
                         <!-- Added kitchen sink card aspect to include aspects of webpage that incluce html, css, js etc -->
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
-                                HTML
-                            </li>
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
-                                CSS
-                            </li>
-                            <li class="list-group-item">
-                                <img src="./images/nojs logo.png" width="35" height="40"
-                                    class="d-inline-block align-top" alt="Javascript logo">
-                            </li>
+                        <ul class="dom-icons mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><i class="fa-brands fa-html5 fa-4x fa-color1"></i></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-css3-alt fa-4x fa-color2"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -106,7 +91,7 @@
 
                 <!-- Card 2 -->
                 <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
-                    <div class="card text-center border-dark mb-3">
+                    <div class="card text-center border-dark mb-3 shadow p-3">
                         <img src="./images/portfolio.png" class="card-img-top" alt="First Portfolio website">
                         <div class="card-body2">
                             <h5 class="card-title">First Portfolio</h5>
@@ -118,55 +103,33 @@
                             </div>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item text">
-                                <!-- Added logo of HTML and CSS so it can be easily identified by user -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
-                                HTML
-                            </li>
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
-                                CSS
-                            </li>
-                            <li class="list-group-item">
-                                <img src="./images/nojs logo.png" width="35" height="40"
-                                    class="d-inline-block align-top" alt="Javascript logo">
-                            </li>
-                        </ul>
+                            <ul class="dom-icons mb-0 list-inline mt-3">
+                                <!-- Used sizing 4x to make icon bigger, added fa-color so that colour can be edited in css -->
+                                <li class="list-inline-item"><i class="fa-brands fa-html5 fa-4x fa-color1"></i></a></li>
+                                <li class="list-inline-item"><i class="fa-brands fa-css3-alt fa-4x fa-color2"></i></a></li>
+                            </ul>
+                            </ul>
                     </div>
                 </div>
                 <!-- End card 2 -->
 
                 <!-- Card 3 -->
                 <div class="cardContainer col-lg-4 col-md-4 col-sm-6">
-                    <div class="card text-center border-dark mb-3">
+                    <div class="card text-center border-dark mb-3 shadow p-3">
                         <img src="./images/prework.png" class="card-img-top" alt="Prework study guide website">
                         <div class="card-body3">
                             <h5 class="card-title">Prework Study Guide</h5>
                             <p class="card-text">Website created with guided instructions on how to create. Website with
                                 small amount of information about HTML, CSS and Javascript for a new beginner.</p>
                             <div class="button-prework">
-                                <a href="https://chinapicke.github.io/prework-study/" class="btn btn-outline-dark">Go to
+                                <a href="https://chinapicke.github.io/prework-study/" class="btn btn-outline-dark ">Go to
                                     page </a>
                             </div>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="HTML logo">
-                                HTML
-                            </li>
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="CSS logo">
-                                CSS
-                            </li>
-                            <li class="list-group-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Javascript-shield.svg"
-                                    width="40" height="40" class="d-inline-block align-top" alt="Javascript logo">
-                                Javascript
-                            </li>
+                        <ul class="dom-icons mb-0 list-inline mt-3">
+                            <li class="list-inline-item"><i class="fa-brands fa-html5 fa-4x fa-color1"></i></a></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-css3-alt fa-4x fa-color2"></i></a></li>
+                            <li class="list-inline-item"><i class="fa-brands fa-square-js fa-4x fa-color3"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -180,20 +143,35 @@
     <!-- Skills and About Me section -->
     <!-- Different row to display skills and about me section, each section to take up 1/2 page on large + medium screen and each section to take up the whole page on a small screen -->
     <section class="section" id="skills-aboutme">
+        <h2 class="subheading"> Skills & About Me </h2>
     <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="card text-center">
+          <div class="card text-center border-dark">
             <div class="card-body">
               <h5 class="card-title">Skills</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">What I have learnt so far..</p>
+              <ul class="list-group">
+                <li class="list-group-item">Semantically write HTML</li>
+                <li class="list-group-item">Develop HTML from scratch</li>
+                <li class="list-group-item">Use CSS to format and style webpages</li>
+                <li class="list-group-item">Purpose of Github and how to use it</li>
+                <li class="list-group-item">Use of Bootstrap for HTML and styling</li>
+              </ul>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6  col-sm-12">
-          <div class="card text-center">
+          <div class="card text-center border-dark">
             <div class="card-body">
               <h5 class="card-title">About Me</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">A little information about me..</p>
+              <ul class="list-group">
+                <li class="list-group-item">Complete beginner to front-end development</li>
+                <li class="list-group-item">Qualified physiotherapist specialising in intensive care</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -201,27 +179,38 @@
       </section>
 
     <!-- Footer -->
-    <footer>
-        <div id="contacts" class="subheading">
+    <footer class="footer" id="contactme">
+        <div class="contacts">
             <h2>Contact Me</h2>
         </div>
         <div class="contact_links">
             <ul>
                 <li>
-                    <a href="555-555-555" targets="_blank">555-555-555</a>
+                    <i class="fa fa-phone">
+                        <a href="555-555-555" targets="_blank">555-555-555</a>
+                    </i>
                 </li>
                 <li>
+                    <i class="fa fa-envelope-o" >
+                        <a href="mailto:chinapickering@hotmail.co.uk" target="_blank">chinapickering@hotmail.co.uk</a>
+                    </i>
                     <!-- Set all hyperlink at the bottom of page to open in another window using target tag. I have not attached my own twitter or LinkedIn account but I have attached the sign in page to both -->
-                    <a href="mailto:chinapickering@hotmail.co.uk" target="_blank">chinapickering@hotmail.co.uk</a>
                 </li>
                 <li>
-                    <a href="https://github.com/chinapicke" targets="_blank">GitHub</a>
+                    <i class="fa fa-github" >
+                        <a href="https://github.com/chinapicke" target="_blank">GitHub</a>
+                    </i>
+                   
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/home" targets="_blank"> LinkedIn</a>
+                    <i class="fa fa-linkedin-square">
+                        <a href="https://www.linkedin.com/home" targets="_blank"> LinkedIn</a>
+                    </i>
                 </li>
                 <li>
-                    <a href="https://twitter.com/" targets="_blank">Twitter</a>
+                    <i class="fa fa-twitter">
+                        <a href="https://twitter.com/" targets="_blank">Twitter</a>
+                    </i>
                 </li>
             </ul>
         </div>
