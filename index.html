@@ -10,6 +10,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 
+
     <!-- Added link to add font awesome for brand icons in the footer/contact me section -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
@@ -23,15 +24,17 @@
     <!-- Navigation bar -->
     <!-- Changed bg to transparent so jumbotron background img covers navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="#">CHINA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand">CHINA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- mx-auto sets margin for left and right side as auto for spacing -->
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">HOME</a>
+                    <a class="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#work">WORK</a>
                 </li>
@@ -39,7 +42,7 @@
                     <a class="nav-link" href="#skills-aboutme">SKILLS/ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contactme">CONTACT ME</a>
+                    <a class="nav-link " href="#contactme">CONTACT</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +57,7 @@
             <hr class="my-4">
             <p class="start-text">Currently learning front-end development</p>
             <p class="lead1">
-                <a class="btn btn-primary btn-lg btn-outline-light" href="#" role="button">Learn more</a>
+                <a class="btn btn-primary btn-lg btn-outline-light" href="#work" role="button">Learn more</a>
             </p>
             <!-- Changed class from lead to button to make it a different class to help with the alignment in the jumbotron -->
         </div>
@@ -83,7 +86,7 @@
                             <!-- Hyperlinked github link to buttons -->
                             <!-- Created button class to help format buttons so that they are in line with one another from different cards -->
                             <div class="button-horiseon">
-                                <a href="https://chinapicke.github.io/first_challenge/" class="btn btn-outline-light">Go
+                                <a href="https://chinapicke.github.io/first_challenge/" target="_blank" class="btn btn-outline-light">Go
                                     to page</a>
                             </div>
                         </div>
@@ -103,10 +106,9 @@
                         <div class="card-body2">
                             <h5 class="card-title">First Portfolio</h5>
                             <p class="card-text2">Website created with no starter code using HTML and CSS with the use
-                                of
-                                grid and media queries.</p>
+                                of grid and media queries.</p>
                             <div class="button-portfolio">
-                                <a href="https://chinapicke.github.io/china_portfolio/#contacts"
+                                <a href="https://chinapicke.github.io/china_portfolio/#contacts" target="_blank"
                                     class="btn btn-outline-light">Go to page</a>
                             </div>
                         </div>
@@ -128,13 +130,11 @@
                         <img src="./images/prework.png" class="card-img-top" alt="Prework study guide website">
                         <div class="card-body3">
                             <h5 class="card-title">Prework Study Guide</h5>
-                            <p class="card-text3">Website created with guided instructions on how to create. Website
-                                with
-                                small amount of information about HTML, CSS and Javascript for a new beginner.</p>
+                            <p class="card-text3">Website created with guided instructions on how to create.Small info
+                                about HTML, CSS and Javascript for a new beginner.</p>
                             <div class="button-prework">
-                                <a href="https://chinapicke.github.io/prework-study/" class="btn btn-outline-light">Go
-                                    to
-                                    page </a>
+                                <a href="https://chinapicke.github.io/prework-study/" target="_blank" class="btn btn-outline-light">Go
+                                    to page </a>
                             </div>
                         </div>
                         <ul class="dom-icons mb-0 list-inline mt-3">
@@ -145,7 +145,6 @@
                     </div>
                 </div>
                 <!-- End card 3 -->
-
             </div>
         </div>
     </section>
@@ -215,12 +214,12 @@
                 </li>
                 <li>
                     <i class="fa fa-linkedin-square">
-                        <a href="https://www.linkedin.com/home" targets="_blank"> LinkedIn</a>
+                        <a href="https://www.linkedin.com/home" target="_blank"> LinkedIn</a>
                     </i>
                 </li>
                 <li>
                     <i class="fa fa-twitter">
-                        <a href="https://twitter.com/" targets="_blank">Twitter</a>
+                        <a href="https://twitter.com/" target="_blank">Twitter</a>
                     </i>
                 </li>
             </ul>

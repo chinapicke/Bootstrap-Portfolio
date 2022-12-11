@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body{
     background-color: lightgray;
@@ -11,32 +7,26 @@ body{
 /* Changed to position absolute so navbar would have the same background as jumbotron */
 .navbar {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
 }
-
 .navbar-brand {
     font-size: 25px;
     font-family: 'Optima', sans-serif;
     color: black;
 }
-
 /* Added space between the different items within the navbar and to help center with the jumbotron h1*/
 .navbar-nav .nav-link {
-    margin-right: 60px;
     font-family: 'Optima', sans-serif;
 }
-
 /* Included underlining navbar when aspect hovered over */
 .nav-link:hover {
     text-decoration: underline;
 }
 
-.hamburger{
-    display: none;
-    
+.nav-item{
+    margin-left:50px;
 }
+
 
 /* JUMBOTRON */
 /* Used image to cover jumbotron area, changed the height so that the jumbotron would take up more of the page*/
@@ -63,7 +53,7 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
     font-family: 'Optima', sans-serif;
     font-size: 52px;
     color: black;
-    margin-left: 35vh;
+    margin-left: 30vh;
     font-weight: bolder;
 }
 
@@ -91,11 +81,17 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
 /* WORK*/
 /* Content using cards for work section */
 /* Moved bottom margin down so that the card is in line with the other 2 cards */
+
+.section{
+    font-family: 'Optima', sans-serif;
+    margin: 20px;
+}
 .subheading {
     padding-bottom: 40px;
     text-decoration: underline;
     text-align: center;
 }
+
 
 
 /* Margin bottom to move down button in the card */
@@ -153,6 +149,7 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Optima', sans-serif;;
 
 }
 
@@ -191,18 +188,76 @@ https://www.w3schools.com/howto/howto_css_rounded_images.asp */
   5px 5px 
 }
 
-/* MEDIA QUERIES */
-@media screen and (min-width: 801px) {
-    .navbar {
-      display: block !important;
-    }
-  }
 
+/* MEDIA QUERIES */
 @media only screen and (max-width:800px){
+    /* Changed jumbotron font sizes and images */
+    .jumbotron{
+        height: calc(100vh - 20vh);
+    }
    .jumbotron h1{
-    font-size: 20px
+    font-size: 35px
    } 
-   .hamburger{
-    display: block;
+   .header-img img {
+    float: right;
+    border-radius: 50%;
+    height: 20vh;
+    position: relative;
+    bottom: 5vh;
+   }
+   .lead{
+    font-size: 20px;
+   }
+   .start-text{
+    font-size: 20px;
+   }
+   .lead1{
+    margin-left: 50px;
+   }
+   .subheading{
+    font: size 30px;
+   }
+}
+
+/* If page was to be viewed on mobile screen */
+@media only screen and (max-width: 600px){
+    .jumbotron{
+        height: calc(100vh - 20vh);
+    }
+    /* Changed font sizes to fit the screen space available */
+   .jumbotron h1{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    color: black;
+   } 
+   .header-img img {
+    height: 20vh;
+    top: 5vh;
+   }
+   .navbar-brand{
+    font-size: 20px;
+   }
+   .lead{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+   }
+   .start-text{
+    font-size: 10px;
+   }
+   .lead1{
+    margin-left: 50px;
+   }
+   .subheading{
+    font: size 20px;
+   }
+   /* Hides the button on jumbotron */
+   .lead1{
+    display: none;
+   }
+   .contacts{
+    margin-left: 10px;
    }
 }
